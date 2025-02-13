@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5; /* Cinza claro, neutro e moderno */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #00796b; /* Verde moderno e sofisticado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+/* Estilos para a seção Sobre a Nutricionista */
+.sobre-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 20px;
+}
+#sobre{
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ padding: 20px;
+
+}
+
+.texto-anaclara {
+    font-size: 1.2em; /* Ajuste no tamanho da fonte */
+    line-height: 1.6;
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.foto-anaclara img {
+    width: 250px; /* Define um tamanho fixo para a foto */
+    height: auto; /* Mantém a proporção da foto */
+    border-radius: 5%; /* Faz a foto ter bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    margin-right: 200px; /* Ajusta a margem direita para afastar da borda */
+}
+.foto-anaclara:hover{
+    transform: scale(1.1);
+}
+
+
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para os planos */
+.planos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.planoouro {
+    background-color: rgb(255, 255, 255); /* Amarelo suave moderno */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planoprata {
+    background-color: #ffffff; /* Cinza suave moderno */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planodiamante {
+    background-color: #ffffff; /* Azul claro moderno */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planorubi {
+    background-color: #ffffff; /* Vermelho suave moderno */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 22%;
+    margin-bottom: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.planoouro:hover {
+    transform: translateY(-10px);
+}
+
+.planoprata:hover {
+    transform: translateY(-10px);
+}
+
+.planodiamante:hover {
+    transform: translateY(-10px);
+}
+
+.planorubi:hover {
+    transform: translateY(-10px);
+}
+
+/* Títulos dos planos */
+.planoouro h3 {
+    font-size: 1.6em;
+    color: #ff9800; /* Laranja moderno para combinar com o amarelo */
+    margin-bottom: 15px;
+}
+
+.planoprata h3 {
+    font-size: 1.6em;
+    color: #424242; /* Cinza escuro moderno para o plano prata */
+    margin-bottom: 15px;
+}
+
+.planodiamante h3 {
+    font-size: 1.6em;
+    color: #0288d1; /* Azul escuro para o plano diamante */
+    margin-bottom: 15px;
+}
+
+.planorubi h3 {
+    font-size: 1.6em;
+    color: #9c1b1b; /* Vinho moderno para o plano rubi */
+    margin-bottom: 15px;
+}
+
+/* Listas de cada plano */
+.planoouro ul,
+.planoprata ul,
+.planodiamante ul,
+.planorubi ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.planoouro ul li,
+.planoprata ul li,
+.planodiamante ul li,
+.planorubi ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o contato */
+#contato {
+    background-color: #00796b; /* Cor verde moderna */
+    color: white;
+    text-align: center;
+}
+
+#contato a {
+    background-color: #fff;
+    color: #00796b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#contato a:hover {
+    background-color: #004d40; /* Verde escuro ao passar o mouse */
+    color: white;
+}
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-items: flex-start;
+        gap: 40px;/*aumenta a distancia entre o container de texto e a foto*/
+    }
+
+    .foto-anaclara img {
+        margin-right: 0;
+        width: 80%; /* Ajusta melhor a largura da imagem */
+        max-width: 300px;
+    }
+
+    .planos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planoouro, .planoprata, .planodiamante, .planorubi {
+        width: 90%;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    .sobre-container {
+        padding: 10px;
+    }
+
+    .texto-anaclara {
+        font-size: 1em;
+        text-align: left; /*DEIXA O TEXTO BONINTINHO NA PARTE ESQUERDA*/
+        width: 100%;
+    }
+}
+/* Efeito de rolagem */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botão Voltar ao Topo */
+#voltarTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#voltarTopo.visivel {
+    opacity: 1;
+}
+
+
+#metodo {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#metodo h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0288d1; /* Azul escuro para o título */
+    
+}
+
+#metodo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #424242; /* Cinza escuro para o texto */
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Estilos para Acompanhamento */
+#acompanhamento {
+    background-color: #ffffff; /* Branco, para dar destaque */
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#acompanhamento h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00796b; /* Verde para o título */
+    text-align: center;
+}
+
+#acompanhamento div {
+    margin-bottom: 30px;
+}
+
+#acompanhamento h3 {
+    font-size: 1.6em;
+    color: #ff9800; /* Laranja para os subtítulos */
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+
+#acompanhamento p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #424242; /* Cinza escuro para o texto */
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;s
+}
+
+/* Responsividade para método e acompanhamento */
+@media (max-width: 768px) {
+    #metodo p, #acompanhamento p {
+        font-size: 1.1em;
+        max-width: 100%;
+    }
+
+    #metodo h2, #acompanhamento h2 {
+        font-size: 1.8em;
+    }
+
+    #acompanhamento div {
+        text-align: left;
+    }
+}
